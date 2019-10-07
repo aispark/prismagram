@@ -1,0 +1,23 @@
+{
+  "name": "prismagram",
+  "version": "1.0.0",
+  "description": "express + prisma + react + react native 인스타그램 클론 ",
+  "main": "index.js",
+  "repository": "https://github.com/aispark/prismagram.git",
+  "author": "aispark <aispark@paran.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-node": "^0.0.1-security",
+    "dotenv": "^8.1.0",
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  },
+  "scripts": {
+    "dev": "nodemon --exec babel-node src/server.js"
+  }
+}
