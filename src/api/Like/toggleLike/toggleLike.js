@@ -20,11 +20,11 @@ export default {
             }
           }
         ]
-      }
+      };
       try {
-        const existingLike = await prisma.$exists.like(filterOption)
+        const existingLike = await prisma.$exists.like(filterOption);
         if (existingLike) {
-          await prisma.deleteManyLikes(filterOption)
+          await prisma.deleteManyLikes(filterOption);
         } else {
           await prisma.createLike({
             user: {
@@ -37,12 +37,12 @@ export default {
                 id: postId
               }
             }
-          })
+          });
         }
-        return true
+        return true;
       } catch (error) {
-        console.log(error)
-        return false
+        console.log(error);
+        return false;
       }
     }
   }
