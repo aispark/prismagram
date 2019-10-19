@@ -21,6 +21,6 @@ express + prisma + react + react native 인스타그램 클론
 - [x] 사진 변경
 - [x] 사진 삭제
 - [x] 피드 보기
-- [ ] room 보기
-- [ ] 다이렉트 메세지 전송
+- [x] 다이렉트 메세지 전송
+- [] room 보기
 - [ ] 다이렉트 메세지 받기(real time)

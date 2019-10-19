@@ -26,7 +26,6 @@ export default {
         throw Error("Room not found");
       }
 
-      console.log("room", room);
       const getTo = room.participants.filter(
         (participant) => participant.id !== user.id
       )[0];
