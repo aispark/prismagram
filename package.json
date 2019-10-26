@@ -40,5 +40,8 @@
     "postbuild": "cd src && npx copy api/**/*.graphql ../build/api",
     "prestart": "yarn run build",
     "start": "node build/server.js"
+  },
+  "engines": {
+    "node": "10.16.2"
   }
 }
