@@ -41,7 +41,7 @@ export default {
     },
     isSelf: (parent, _, { request }) => {
       const { user } = request;
-      const { id } = parent;
+      const { id: parentId } = parent;
       return user.id === parentId;
     }
   }
