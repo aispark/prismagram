@@ -9,8 +9,10 @@ export default {
       try {
         await sendSecretMail(email, loginSecret);
         await prisma.updateUser({ data: { loginSecret }, where: { email } });
+
         return true;
-      } catch {
+      } catch (error) {
+        console.log("requestSecret!!!", error);
         return false;
       }
     }
