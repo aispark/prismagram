@@ -19,6 +19,7 @@ type User {
   updatedAt: String
   followersCount: Int!
   followingCount: Int!
+  postsCount: Int!
 }
 
 type Post {
